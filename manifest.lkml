@@ -11,7 +11,7 @@ application: demo_combined_genai_ea {
     new_window: yes
     new_window_external_urls: ["https://developers.generativeai.google/*"]
     local_storage: yes
-    external_api_urls: ["https://explore-assistant-api-730192175971.us-central1.run.app"]
+    external_api_urls: ["https://explore-assistant-api-730192175971.us-central1.run.app", "https://us-central1-explore-assistant-cf-mis.cloudfunctions.net/explore-assistant-api"]
   }
 }
 
