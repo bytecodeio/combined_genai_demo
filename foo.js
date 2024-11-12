@@ -1,0 +1,1 @@
+export const testConfig ={'foo':'bar}
