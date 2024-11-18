@@ -22,8 +22,8 @@ application: demo_combined_genai_ds {
   file: "ds.js"
   # url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
-    dashboard_vis: yes
-    dashboard_tile: yes
+    dashboard_vis: no
+    dashboard_tile: no
     standalone: yes
   }
 
@@ -35,7 +35,7 @@ application: demo_combined_genai_ds {
     core_api_methods: ["run_inline_query","all_lookml_models","dashboard","dashboard_dashboard_elements"]
     global_user_attributes: ["genai_client_secret"]
     external_api_urls: [
-      "https://restful-service-730192175971.us-central1.run.app","http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*"
+      "https://restful-service-730192175971.us-central1.run.app","http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*","https://*/foo.js"
     ]
     oauth2_urls: [
       "https://accounts.google.com/o/oauth2/v2/auth",
