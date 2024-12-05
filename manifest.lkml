@@ -1,17 +1,34 @@
 project_name: "combined_genai_demo"
 
+constant: LOOKER_BIGQUERY_CONNECTION_NAME {
+  value: "explore-assistant-test"
+  export: override_required
+}
+
+constant: BQML_REMOTE_CONNECTION_MODEL_ID {
+  value: "combined_genai_demo"
+  export: override_required
+}
+# This is the ID of the remote connection setup in BigQuery
+
+constant: BQML_REMOTE_CONNECTION_ID {
+  value: "remote_connection_id" # replace these defaults
+  export: override_required
+}
+
 application: demo_combined_genai_ea {
   label: "Combined GenAI EA"
-  file: "ea.js"
+  # file: "ea.js"
+  url: "https://localhost:8080/explore_assistant.js"
   entitlements: {
-    core_api_methods: ["lookml_model_explore","create_sql_query","run_sql_query","run_query","create_query"]
+    core_api_methods: ["lookml_model_explore","create_sql_query","run_sql_query","run_query","create_query","update_user_attribute","create_user_attribute","all_user_attributes"]
     navigation: yes
     use_embeds: yes
     use_iframes: yes
     new_window: yes
     new_window_external_urls: ["https://developers.generativeai.google/*"]
     local_storage: yes
-    external_api_urls: ["https://explore-assistant-api-730192175971.us-central1.run.app", "https://us-central1-explore-assistant-cf-mis.cloudfunctions.net/explore-assistant-api"]
+    external_api_urls: ["https://explore-assistant-api-114227247293.us-central1.run.app"]
   }
 }
 
@@ -20,7 +37,7 @@ application: demo_combined_genai_ea {
 application: demo_combined_genai_ds {
   label: "Demo Combined GenAI DS"
   file: "ds.js"
-  # url: "https://localhost:8080/dashboard_summarization.js"
+  # url: "https://localhost:8080/ds.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: no
