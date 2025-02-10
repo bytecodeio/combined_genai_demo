@@ -1,5 +1,5 @@
 view: trusted_dashboards {
-  sql_table_name: `explore-assistant-test.explore_assistant.trusted_dashboards` ;;
+  sql_table_name: `explore_assistant.trusted_dashboards` ;;
 
   dimension: explore_id {
     type: string
