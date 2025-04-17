@@ -36,8 +36,8 @@ constant: BQML_REMOTE_CONNECTION_MODEL_ID {
 
 application: demo_combined_genai_ds {
   label: "Dashboard GenAI Agent"
-  file: "dashboard_summarization.js"
-  # url: "https://localhost:8080/dashboard_summarization.js"
+  # file: "dashboard_summarization.js"
+  url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
@@ -54,8 +54,8 @@ application: demo_combined_genai_ds {
     use_embeds: yes
     use_iframes: yes
     use_clipboard: no
-    core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements"]
-    external_api_urls: [ "https://restful-service-730192175971.us-central1.run.app"]
-    oauth2_urls: []
+    core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","create_user_attribute","user_attribute_user_values"]
+    external_api_urls: ["https://us-central1-aiplatform.googleapis.com/v1/projects/combined-genai-bi/locations/us-central1/publishers/google/models/*"]
+    oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
