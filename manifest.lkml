@@ -5,6 +5,9 @@ constant: LOOKER_BIGQUERY_CONNECTION_NAME {
   export: override_required
 }
 
+local_dependency: {
+  project: "aaron_test_project"
+}
 constant: BQML_REMOTE_CONNECTION_MODEL_ID {
   value: "explore_assistant_llm"
   export: override_required
