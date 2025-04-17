@@ -36,8 +36,8 @@ constant: BQML_REMOTE_CONNECTION_MODEL_ID {
 
 application: demo_combined_genai_ds {
   label: "Dashboard GenAI Agent"
-  # file: "dashboard_summarization.js"
-  url: "https://localhost:8080/dashboard_summarization.js"
+  file: "dashboard_summarization.js"
+  # url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
