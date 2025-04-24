@@ -13,31 +13,31 @@ constant: BQML_REMOTE_CONNECTION_MODEL_ID {
   export: override_required
 }
 
-# application: demo_combined_genai_ea {
-#   label: "Combined GenAI EA"
-#   # file: "ea.js"
-#   url: "https://localhost:8080/explore_assistant.js"
-#   entitlements: {
-#     core_api_methods: ["lookml_model_explore","run_inline_query","update_user_attribute","create_user_attribute","all_user_attributes",
-#       "create_query","run_query","me"]
-#     navigation: yes
-#     use_embeds: yes
-#     use_iframes: yes
-#     new_window: yes
-#     new_window_external_urls: ["https://developers.generativeai.google/*"]
-#     local_storage: yes
+application: demo_combined_genai_ea {
+  label: "Combined GenAI EA"
+  # file: "ea.js"
+  url: "https://localhost:8080/explore_assistant.js"
+  entitlements: {
+    core_api_methods: ["lookml_model_explore","run_inline_query","update_user_attribute","create_user_attribute","all_user_attributes",
+      "create_query","run_query","me"]
+    navigation: yes
+    use_embeds: yes
+    use_iframes: yes
+    new_window: yes
+    new_window_external_urls: ["https://developers.generativeai.google/*"]
+    local_storage: yes
 
-#     global_user_attributes: ["vertex_cf_auth_token"]
-#     external_api_urls: ["https://explore-assistant-api-114227247293.us-central1.run.app", "https://explore-assistant-api-730192175971.us-central1.run.app","https://us-central1-explore-assistant-cf-mis.cloudfunctions.net/explore-assistant-api"]
-#   }
-# }
+    global_user_attributes: ["vertex_cf_auth_token"]
+    external_api_urls: ["https://explore-assistant-api-114227247293.us-central1.run.app", "https://explore-assistant-api-730192175971.us-central1.run.app","https://us-central1-explore-assistant-cf-mis.cloudfunctions.net/explore-assistant-api"]
+  }
+}
 
 
 
 application: demo_combined_genai_ds {
   label: "Dashboard GenAI Agent"
-  file: "dashboard_summarization.js"
-  # url: "https://localhost:8080/dashboard_summarization.js"
+  # file: "dashboard_summarization.js"
+  url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
