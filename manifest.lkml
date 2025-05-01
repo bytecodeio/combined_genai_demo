@@ -55,7 +55,7 @@ application: demo_combined_genai_ds {
     use_iframes: yes
     use_clipboard: no
     core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","create_user_attribute","user_attribute_user_values"]
-    external_api_urls: ["https://us-central1-aiplatform.googleapis.com/v1/projects/combined-genai-bi/locations/us-central1/publishers/google/models/*"]
+    external_api_urls: ["https://us-central1-aiplatform.googleapis.com/v1/projects/combined-genai-bi/locations/us-central1/publishers/google/models/*","https://restful-service-730192175971.us-central1.run.app/generateArbitraryResponse"]
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
