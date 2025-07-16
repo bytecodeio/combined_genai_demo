@@ -19,7 +19,7 @@ application: demo_combined_genai_ea {
   # url: "https://localhost:8080/explore_assistant.js"
   entitlements: {
     core_api_methods: ["lookml_model_explore","run_inline_query","update_user_attribute","create_user_attribute","all_user_attributes",
-      "create_query","run_query","me","create_sql_query","run_sql_query"]
+      "create_query","run_query","me","run_url_encoded_query"]
     navigation: yes
     use_embeds: yes
     use_iframes: yes
@@ -37,8 +37,8 @@ application: demo_combined_genai_ea {
 
 application: demo_combined_genai_ds {
   label: "Dashboard GenAI Agent"
-  file: "dashboard_summarization.js"
-  # url: "https://localhost:8080/dashboard_summarization.js"
+  # file: "dashboard_summarization.js"
+  url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
